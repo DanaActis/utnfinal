@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Peluqueria Canina</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./stylo.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- contenedor previo a navbar -->
+      <div class="container-fluid" id="menu">
+        <div class="row">
+          <div class="col-md-4">
+            <a class="navbar-logo" href="#">
+              <img
+                src="./img/logo1.jpeg"
+                style="height: 200px; width: 160px"
+                alt=""
+                id="logo"
+              />
+            </a>
+          </div>
+          <div class="col-md-4"><h1>Peluqueria Canina</h1></div>
+          <div class="col-md-4" id="titulodireccion">
+            <div><b> Direccion:</b> Carlos casares 4405</div>
+            <div>Gregorio de Laferrere</div>
+            <div><b>Telefono:</b>011-3341-3365</div>
+            <div>
+              <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="https://www.instagram.com/caninos_pelu_canina_pets/"
+                target="_blank"
+                role="button"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="https://www.facebook.com/caninosshop.esteticacanina"
+                target="_blank"
+                role="button"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Nabvar  -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#somos">
+                  Quienes Somos
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#testi">
+                  Testimonios
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#contactanos"
+                >
+                  Contacto
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#formulario"
+                >
+                  Cotizaciones
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <h2 id="tituloLoMejorParaellos" alt="">ELLOS SE MERECEN LO MEJOR</h2>
+    
+    <div class="container-fluid d-flex justify-content-center">
+        <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/carusel1.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./img/carusel2.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./img/carusel3.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      </div>
+    </div>
+  </div>
+    <div class="container" id="quienesomos">
+      <a name="somos"></a>
+      <div class="row">
+        <h2>Quienes Somos</h2>
+        <div class="col-md-6 col-xs-12">
+          <p>
+            <strong> Somos una familia </strong> que se dedicada íntegramente en
+            pos de la salud de su mascota. Estamos habilitados para nuestro
+            trabajo, contamos con diploma y matricula otorgada por IRAM
+            (Instituto Argentino de Normalización y Certificación). Nuestra
+            prioridad es el bienestar general de su mascota, por tal motivo nos
+            aseguramos que reciban una atención acorde a sus necesidades.
+            Trabajamos con productos elaborados por el Laboratorio Veterinario
+            Interbiol, su línea de shapoo Moksha es el único producto que
+            utilizamos para realizar el baño a sus perros. Brindamos
+            asesoramiento y promovemos el hábito rutinario del aseo en edades
+            tempranas, con el objetivo de que lleven una vida saludable como
+            ellos se merecen.
+          </p>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <img
+            src="./img/caniche.jpg"
+            class="img-fluid"
+            alt=""
+            id="perrofeliz"
+          />
+        </div>
+      </div>
+    </div>
+
+    <h2 id="titulotesti">Comentarios de nuestros clientes felices</h2>
+    <a name="testi"></a>
+    <div class="container" id="testimonio">
+      <div class="row">
+        <div class="col-md-3 col-xs-12">
+          <p>
+            <img src="./img/testimonial1.jpg" alt="" id="testimonial1" />
+            <strong>Pichiruchi</strong>
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum
+            natus neque vero cumque omnis officia distinctio aliquam aspernatur
+            tenetur? Laborum adipisci reiciendis, rerum maxime dignissimos
+            pariatur voluptatum autem error culpa.
+          </p>
+          <br />
+        </div>
+        <div class="col-md-3 col-xs-12">
+          <p>
+            <img src="./img/testimonial2.jpg" alt="" id="testimonial1" />
+            <strong>Pichiruchi</strong>
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum
+            natus neque vero cumque omnis officia distinctio aliquam aspernatur
+            tenetur? Laborum adipisci reiciendis, rerum maxime dignissimos
+            pariatur voluptatum autem error culpa.
+          </p>
+          <br />
+        </div>
+        <div class="col-md-3 col-xs-12">
+          <p>
+            <img src="./img/testimonial3.jpg" alt="" id="testimonial1" />
+            <strong>Pichiruchi</strong>
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum
+            natus neque vero cumque omnis officia distinctio aliquam aspernatur
+            tenetur? Laborum adipisci reiciendis, rerum maxime dignissimos
+            pariatur voluptatum autem error culpa.
+          </p>
+          <br />
+        </div>
+        <div class="col-md-3 col-xs-12">
+          <p>
+            <img src="./img/testimonial4.jpg" alt="" id="testimonial1" />
+            <strong>Pichiruchi</strong>
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum
+            natus neque vero cumque omnis officia distinctio aliquam aspernatur
+            tenetur? Laborum adipisci reiciendis, rerum maxime dignissimos
+            pariatur voluptatum autem error culpa.
+          </p>
+          <br />
+        </div>
+        <div class="col-md-3 col-xs-12">
+          <p>
+            <img src="./img/testimonial4.jpg" alt="" id="testimonial1" />
+            <strong>Pichiruchi</strong>
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum
+            natus neque vero cumque omnis officia distinctio aliquam aspernatur
+            tenetur? Laborum adipisci reiciendis, rerum maxime dignissimos
+            pariatur voluptatum autem error culpa.
+          </p>
+          <br />
+        </div>
+        <div class="col-md-3 col-xs-12">
+          <p>
+            <img src="./img/testimonial4.jpg" alt="" id="testimonial1" />
+            <strong>Pichiruchi</strong>
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum
+            natus neque vero cumque omnis officia distinctio aliquam aspernatur
+            tenetur? Laborum adipisci reiciendis, rerum maxime dignissimos
+            pariatur voluptatum autem error culpa.
+          </p>
+          <br />
+        </div>
+        <div class="col-md-3 col-xs-12">
+          <p>
+            <img src="./img/testimonial1.jpg" alt="" id="testimonial1" />
+            <strong>Pichiruchi</strong>
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum
+            natus neque vero cumque omnis officia distinctio aliquam aspernatur
+            tenetur? Laborum adipisci reiciendis, rerum maxime dignissimos
+            pariatur voluptatum autem error culpa.
+          </p>
+          <br />
+        </div>
+        <div class="col-md-3 col-xs-12">
+          <p>
+            <img src="./img/testimonial2.jpg" alt="" id="testimonial1" />
+            <strong>Pichiruchi</strong>
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum
+            natus neque vero cumque omnis officia distinctio aliquam aspernatur
+            tenetur? Laborum adipisci reiciendis, rerum maxime dignissimos
+            pariatur voluptatum autem error culpa.
+          </p>
+          <br />
+        </div>
+      </div>
+    </div>
+
+    <!--Videos-->
+    <div class="videosection">
+      <div class="subtitulo">
+        <h4>Mira Un Video!</h4>
+      </div>
+
+      <div class="video_container">
+        <div class="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/vgXw0H-jhUg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/rsTLyukvxGU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/pRecSWeyaSo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--Fin de videos-->
+
+    <div class="container" id="formulario">
+      <h2>Envianos tu mensaje para tener mas informacion</h2>
+       <!-- FORMULARIO -->
+       <form >
+        <div class="row">
+              <div class="col-md-6 mb-4">
+              <div class="form-outline">
+                <input type="text" id="nombres" class="form-control" />
+                <label class="form-label" style="color:black;font-size: x-large">Nombre</label>
+              </div>
+              </div>
+              <div class="col-md-6 mb-4">
+              <div class="form-outline">
+                <input type="number" id="telefono" class="form-control" />
+                <label class="form-label"style="color:black;font-size: x-large" for="Telefono">Telefono</label>
+              </div>
+              </div>          
+              <div class="col-md-6 mb-4">
+              <div class="form-outline">
+                <input type="text" id="direccion" class="form-control" />
+                <label class="form-label"style="color:black;font-size: x-large" for="Direccion">Direccion</label>
+              </div>
+              </div>
+              <div class="col-md-6 mb-4">
+              <div class="form-outline">
+                <input type="text" id="raza" class="form-control" />
+                <label class="form-label" style="color:black;font-size: x-large" for="Raza">Raza</label>
+              </div>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <h6 class="mb-2 pb-1">Elija el Servicio</h6>
+              <select class="select" id="servicio">
+                <option value="Lavado">Lavado</option>
+                <option value="Lavado + Corte de pelo">Lavado + Corte de pelo</option>
+                <option value="Corte de Pelo">Corte de Pelo</option>
+                <option value="Corte de Uñas">Corte de Uñas</option>
+                <option value="Otros">Otros</option>
+              </select>
+            </div>       
+            <div class="col-md-6 mb-4">
+            <h6 class="mb-2 pb-1">Retiro en Domicilio</h6>
+              <select class="select" id="retiro">
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="form-outline">
+              <input type="email" id="email" class="form-control" />
+              <label class="form-label" style="color:black;font-size: x-large" for="emailAddress">Email</label>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="form-outline">
+              <input type="text" id="comentarios" class="form-control" />
+              <label class="form-label" style="color:black;font-size: x-large" for="comentarios">Comentarios</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mt-4">
+              <button type="button" class="btn btn-warning" onclick="captura()">Guardar</button>
+             </div>
+          </div>
+        </div>
+    </form>
+      <!-- COMIENZO LLAMADO API CON AJAX -->
+      <div class="container">
+        <center><h1 class="well"><img src="" height="10%" alt=""> Mensajes Radom</h1></center>
+        </br></br></br></br>
+        
+        <center><div class="card">
+        <p id="quote" class="quote"></p>
+        <p id="author" class="author"></p>
+        </div></center>
+        <center><ul class="list-inline">
+        <li class="btn btn-info" id="get-quote"><i class="fa fa-quote-left"></i>Proximo mensaje</li>
+        <li class="btn btn-success share-quote" id="share-quote"><i class="fa fa-share-square"></i>Compartir</li>
+          </ul>
+        
+        
+        <ul class="list-inline" id="font">
+        <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
+        <li><a href=""><i class="fa fa-medium"></i></a></li>
+
+        </ul>
+        </center>
+        <center><footer class="me"><b>Coded by:-</b><i><b>M.P.M</b></i></a></footer></center>
+        <script src="./js/random.js"></script>
+        </div>
+          </div>
+    <div class="container-fluid" id="ubicacion">
+      <div class="row">
+        <div class="col-md-6 col-xs-12">
+          <h2>Te contamos donde podes Ubicarnos</h2>
+          <a name="contactanos"></a>
+          <div>Direccion: Carlos casares 4405. Gregorio de Laferrere</div>
+          <div>Telefono: 011-3341-3365</div>
+          <div>Argentina-BuenosAires</div>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.237240392738!2d-58.59017343656594!3d-34.72441394526339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc5d0f543524d%3A0xc74e7404b23f57b7!2sCarlos%20Casares%204405%2C%20Gregorio%20de%20Laferrere%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1681478049147!5m2!1ses!2sar"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-white" id="footer">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://es-la.facebook.com/"
+            target="_blank"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://twitter.com/?lang=es"
+            target="_blank"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://google.com.ar/"
+            target="_blank"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://www.instagram.com/"
+            target="_blank"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <!-- Linkedin -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://www.linkedin.com/login/es"
+            target="_blank"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: #8c52ff">
+        © 2023 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">Grupo 4 (Miron, Parisi, Maidana)</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
+
